@@ -1,12 +1,6 @@
 ---
-- name: This sets up an httpd webserver
-  hosts: all
+ - hosts: all
+   user: root
   tasks:
   - name: Install the httpd rpm
-    yum: name=httpd
-  - name: start the httpd service
-    service: name=httpd state=started
-  - name: Open port 80
-    firewalld: service=http permanent=true state=enabled
-  - name: start the firewalld service
-    service: name=firewalld state=restarted
+    action: yum name=httpd state=installed
