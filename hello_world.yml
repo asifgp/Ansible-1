@@ -1,11 +1,7 @@
 ---
 - hosts: localhost
-- name: ensure file exists
-  copy:
-    content: ""
-    dest: /var/tmp/mine
-    src: /var/tmp/roles
-    force: no
-    group: sys
-    owner: root
-    mode: 0555
+  tasks:
+      - name: Create file
+        file:
+            path: var/tmp/mine
+            state: touch
