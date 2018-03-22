@@ -4,7 +4,7 @@
   copy:
     content: ""
     dest: /var/tmp/mine
-    src: /var/tmp/mine
+    src: /var/tmp/roles
     force: no
     group: sys
     owner: root
