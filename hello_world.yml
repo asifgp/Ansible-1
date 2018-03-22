@@ -1,6 +1,9 @@
 ---
-- hosts: localhost
-  tasks:
-    - copy:
-        src: /var/tmp/roles
-        dest: /var/tmp/mine/
+- name: ensure file exists
+  copy:
+    content: ""
+    dest: /var/tmp/mine
+    force: no
+    group: sys
+    owner: root
+    mode: 0555
