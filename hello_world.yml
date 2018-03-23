@@ -1,13 +1,13 @@
 ---
  - hosts: all
-   #remote_user: root
+   remote_user: root
    user: root
    become: yes
    become_method: sudo
    become_user: root
    
    vars:
-    ansible_become_pass: "kov$2010$air"
+    ansible_become_pass: "kovair@123"
     
    tasks:
     - name: Install gimp
