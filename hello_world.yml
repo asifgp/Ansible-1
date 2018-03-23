@@ -1,6 +1,6 @@
 ---
  - hosts: all
-   remote_user: kovair
+   remote_user: root
    #user: kovair
    become: yes
    tasks:
