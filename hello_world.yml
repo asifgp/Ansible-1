@@ -1,8 +1,8 @@
 ---
  - hosts: all
    #remote_user: root
-   #user: root
-   become: yes
+   user: root
+   #become: yes
    become_method: sudo
    tasks:
     - name: Install gimp
