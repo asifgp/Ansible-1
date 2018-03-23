@@ -4,3 +4,5 @@
    tasks:
     - name: Copies a file from control machine to all hosts
       copy: src=/var/tmp/roles/text.txt dest=/var/tmp/mine
+    - name: Install httpd
+      apt: pkg=httpd state=installed
