@@ -5,4 +5,3 @@
    tasks:
     - name: Install gimp
       yum: name=gimp state=installed
-      sudo: no
