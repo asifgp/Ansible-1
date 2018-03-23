@@ -2,4 +2,5 @@
  - hosts: all
    user: root
    tasks:
-    - file: path=/var/tmp/roles/text.txt owner=kovair mode=0777
+    - name: Install gimp
+      apt: pkg=gimp state=installed
