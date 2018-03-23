@@ -4,4 +4,5 @@
    become: yes
    tasks:
     - name: Install gimp
-      yum: name=gimp state=installed     
+      yum: name=gimp state=installed
+      sudo: no
