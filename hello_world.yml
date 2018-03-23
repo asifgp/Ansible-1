@@ -2,5 +2,7 @@
  - hosts: all
    user: root
    tasks:
-    - name: Install the httpd rpm
-      action: yum name=httpd state=installed
+    - name: Install Jetty
+      apt: pkg=jetty state=installed
+    - name: Copies a file from control machine to all hosts
+      copy: src=/var/tmp/roles/text.txt dest=/tmp/
