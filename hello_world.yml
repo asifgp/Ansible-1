@@ -3,6 +3,6 @@
    user: root
    tasks:
     - file:
-      path: /var/tmp/roles/text.txt
-      owner: kovair
-      mode: 0777
+      path=/var/tmp/roles/text.txt
+      owner=kovair
+      mode=0777
