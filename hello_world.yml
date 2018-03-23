@@ -2,5 +2,7 @@
  - hosts: all
    user: root
    tasks:
-    - name: creating a directory
-      file: path=/var/tmp/56 state=directory
+    - file:
+      path: /var/tmp/roles/text.txt
+      owner: kovair
+      mode: 0777
