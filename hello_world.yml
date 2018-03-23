@@ -2,7 +2,4 @@
  - hosts: all
    user: root
    tasks:
-    - file:
-      path=/var/tmp/roles/text.txt
-      owner=kovair
-      mode=0777
+    - file: path=/var/tmp/roles/text.txt owner=kovair mode=0777
