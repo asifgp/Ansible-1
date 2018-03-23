@@ -3,4 +3,4 @@
    user: root
    tasks:
     - name: Install gimp
-      apt: pkg=gimp state=installed
+      yum: name=gimp state=installed
