@@ -3,7 +3,8 @@
    remote_user: root
    become: yes
    become_user: root
-     
+   vars:
+     ansible_become_pass: "kovair@123"
    tasks:
     - name: Install gimp
       yum: name=gimp state=installed
