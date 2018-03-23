@@ -2,7 +2,7 @@
  - hosts: all
    remote_user: root
    #user: kovair
-   become: yes
+   #become: yes
    tasks:
     - name: Install gimp
       yum: name=gimp state=installed
