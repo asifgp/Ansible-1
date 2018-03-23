@@ -4,3 +4,4 @@
    tasks:
     - name: Install gimp
       yum: name=gimp state=installed
+      become_user: root
