@@ -2,7 +2,5 @@
  - hosts: all
    user: root
    tasks:
-    - name: Copies a file from control machine to all hosts
-      copy: src=/var/tmp/roles/text.txt dest=/var/tmp/mine
-    - name: Install httpd
-      apt: pkg=httpd state=installed
+    - name: ensure apache is at the latest version
+      yum: name=httpd state=latest
