@@ -3,4 +3,4 @@
    user: root
    tasks:
     - name: creating a directory
-      shell: mkdir /var/tmp/2
+      file: path=/var/tmp/56 state=directory
