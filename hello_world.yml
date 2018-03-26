@@ -27,7 +27,7 @@
       
     - name: Open port 81
       firewalld: 
-       port: 8081/tcp
+       port: 81/tcp
        permanent: true 
        state: enabled
     
