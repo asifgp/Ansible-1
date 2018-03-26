@@ -11,8 +11,7 @@
      ansible_ssh_pass: "kov$2010$air"
  
    tasks:
-    - name: install one specific version of Apache
-      yum:
-       name=httpd 
-       update_cache=yes
-       state=latest
+    - name: Install the httpd 
+      yum: name=httpd state=installed
+    - name: start the httpd service
+      service: name=httpd state=started
