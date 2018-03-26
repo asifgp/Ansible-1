@@ -11,5 +11,7 @@
      ansible_ssh_pass: "kov$2010$air"
  
    tasks:
-    - name: Install gimp
-      yum: name=gimp state=installed
+    - name: Install specific version of git
+      yum:  
+        name: git-1.8.3.1-6.el7
+        state: present
