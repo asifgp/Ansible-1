@@ -10,8 +10,6 @@
      ansible_ssh_user: "root"
      ansible_ssh_pass: "kov$2010$air"
  
-   tasks:
-    - name: Install the httpd 
-      yum: name=httpd state=installed
+   handlers:
     - name: start the httpd service
       service: name=httpd state=started
