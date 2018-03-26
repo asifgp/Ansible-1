@@ -11,5 +11,5 @@
      ansible_ssh_pass: "kov$2010$air"
  
    tasks:
-    - name: Install gimp
-      yum: name=gimp state=installed
+    - name: Remove gimp
+      yum: name=gimp state=absent
