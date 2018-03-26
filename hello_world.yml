@@ -28,8 +28,8 @@
     - name: Open port 81
       firewalld: 
        port: 8081/tcp
-       permanent=true 
-       state=enabled
+       permanent: true 
+       state: enabled
     
     - name: start the firewalld service
       service: name=firewalld state=restarted
