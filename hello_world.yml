@@ -11,7 +11,7 @@
      ansible_ssh_pass: "kov$2010$air"
  
    tasks:
-    - name: install the latest version of Apache
+    - name: remove the Apache package
       yum:
        name: httpd
-       state: latest
+       state: absent
