@@ -13,5 +13,6 @@
    tasks:
     - name: install one specific version of Apache
       yum:
-       list: ansible
-       register: result
+       name=httpd 
+       update_cache=yes
+       state=latest
