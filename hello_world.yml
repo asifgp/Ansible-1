@@ -24,3 +24,9 @@
        
     - name: start the httpd service
       service: name=httpd state=started
+      
+    - name: Open port 81
+      firewalld: service=http permanent=true state=enabled
+    
+    - name: start the firewalld service
+      service: name=firewalld state=restarted
