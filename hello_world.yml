@@ -16,8 +16,3 @@
        name=httpd 
        update_cache=yes
        state=latest
-             
-    - name: start the httpd service
-      service: 
-       name=httpd 
-       state=started
