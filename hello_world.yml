@@ -13,5 +13,5 @@
    tasks:
     - name: Install specific version of git
       yum:  
-        name: git-1.8.3.1-6.el7
+        name: git-1.8.3.1-12.el7_4
         state: present
