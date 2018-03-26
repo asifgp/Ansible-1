@@ -11,5 +11,7 @@
      ansible_ssh_pass: "kov$2010$air"
  
    tasks:
-    - name: Remove gimp
-      yum: name=gimp state=absent
+    - name: install the latest version of Apache
+      yum:
+       name: httpd
+       state: latest
