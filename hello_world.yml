@@ -10,11 +10,12 @@
      ansible_ssh_user: "root"
      ansible_ssh_pass: "kov$2010$air"
  
+ - lineinfile:
+    path: /etc/httpd/conf/httpd.conf
+    regexp: '^Listen '
+    insertafter: '^#Listen '
+    line: 'Listen 80'
    #handlers:
     #- name: start the httpd service
      # service: name=httpd state=started
-  - lineinfile:
-     path: /etc/httpd/conf/httpd.conf
-     regexp: '^Listen '
-     insertafter: '^#Listen '
-     line: 'Listen 8080'
+
