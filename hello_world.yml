@@ -1,5 +1,5 @@
 ---
- - hosts: 192.168.2.79
+ - hosts: all
    remote_user: root
    become: yes
    become_user: root
