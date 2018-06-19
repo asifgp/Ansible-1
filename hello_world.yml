@@ -1,8 +1,8 @@
 ---
  - hosts: all
-   remote_user: root
+   remote_user: kovair
    become: yes
-   become_user: root
+   become_user: kovair
   
    tasks:
     - name: Install gimp
